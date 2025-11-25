@@ -44,7 +44,7 @@
           </li>
           <li class="form-list_item">
             <label for="textTop">Wprowadź tekst górny</label>
-            <input class="input_text" type="text" placeholder="Tekst górny" name="textTop">
+            <input class="input_text" type="text" placeholder="Tekst górny" name="textTop" value="{{ top_text }}">
           </li>
           <li class="form-list_item">
             <label for="textBottom">Wprowadź tekst dolny</label>
@@ -75,7 +75,7 @@
     <div class="meme-block" id="memeBlock">
       
       <p class="text_top" style=""> <!-- Zadanie #3. Przenoszenie zmiennych do CSS -->
-        <!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
+        {{ top_text }}<!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
       </p>
 
       <img class="meme" src="{{ url_for('serve_images', path=selected_image) }}" alt="{{ selected_image }}">

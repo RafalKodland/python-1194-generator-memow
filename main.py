@@ -12,7 +12,7 @@ def index():
         selected_image = request.form['image-selector']
 
         # Zadanie #2. Odczytywanie tekstu
-        
+        top_text = request.form['textTop']
 
         # Zadanie #3. Odczytywanie pozycji tekstu
        
@@ -25,7 +25,7 @@ def index():
                                selected_image=selected_image, 
 
                                # Zadanie #2. Wyświetlanie tekstu
-                               
+                               top_text=top_text,
 
                                # Zadanie #3. Wyświetlanie koloru
                                
