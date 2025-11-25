@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
         # odczytywanie wybranego obrazka
-        selected_image = request.form.get('image-selector')
+        selected_image = request.form['image-selector']
 
         # Zadanie #2. Odczytywanie tekstu
         

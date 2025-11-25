@@ -38,7 +38,7 @@
               <option value="mem_1.jpg" {% if selected_image == 'mem_1.jpg' %}selected{% endif %}>Dziewczynka przy katastrofie</option>
               <option value="mem_2.jpg" {% if selected_image == 'mem_2.jpg' %}selected{% endif %}>Dwa przyciski</option>
               <!--Zadanie #1. Dodaj więcej memów poniżej -->
-
+              <option value="mem_3.webp" {% if selected_image == 'mem_3.webp' %}selected{% endif %}>Zawsze był</option>
 
             </select>
           </li>
@@ -74,13 +74,13 @@
     </div>
     <div class="meme-block" id="memeBlock">
       
-      <p class="text_top" style="<!-- Zadanie #3. Przenoszenie zmiennych do CSS -->">
+      <p class="text_top" style=""> <!-- Zadanie #3. Przenoszenie zmiennych do CSS -->
         <!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
       </p>
 
       <img class="meme" src="{{ url_for('serve_images', path=selected_image) }}" alt="{{ selected_image }}">
 
-      <p class="text_bottom" style="<!-- Zadanie #3. Przenoszenie zmiennych do CSS -->">
+      <p class="text_bottom" style=""> <!-- Zadanie #3. Przenoszenie zmiennych do CSS -->
         <!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
       </p>
     </div>
