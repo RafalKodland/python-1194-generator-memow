@@ -15,7 +15,7 @@ def index():
         top_text = request.form['textTop']
 
         # Zadanie #3. Odczytywanie pozycji tekstu
-       
+        top_text_y = request.form['textTop_y']
 
         # Zadanie #3. Odczytywanie koloru tekstu
         
@@ -31,7 +31,7 @@ def index():
                                
                                
                                # Zadanie #3. Wyświetlanie pozycji tekstu
-
+                                top_text_y=top_text_y,
                                )
     else:
         # Wyświetlanie pierwszego obrazka, jako grafika domyślna

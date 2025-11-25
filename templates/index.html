@@ -62,7 +62,7 @@
           </li>
           <li class="form-list_item">
             <label for="textTop_y">Wprowadź pozycję górnego tekstu w osi Y</label>
-            <input class="input_text" id="textTop_y" type="text" placeholder="Tekst górny" name="textTop_y">
+            <input class="input_text" id="textTop_y" type="text" placeholder="Tekst górny" name="textTop_y" value="{{ top_text_y }}">
           </li>
           <li class="form-list_item">
             <label for="textBottom_y">Wprowadź pozycję dolnego tekstu w osi Y</label>
@@ -74,7 +74,7 @@
     </div>
     <div class="meme-block" id="memeBlock">
       
-      <p class="text_top" style=""> <!-- Zadanie #3. Przenoszenie zmiennych do CSS -->
+      <p class="text_top" style="top: {{ top_text_y }}px"> <!-- Zadanie #3. Przenoszenie zmiennych do CSS -->
         {{ top_text }}<!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
       </p>
 
